@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
 </head>
 
 <body>
@@ -15,12 +20,12 @@
 
       <div class="main-nav__logo">
         <a href="index.html">
-          <img class="main-nav__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
         </a>
       </div>
 
       <button class="main-nav__toggle main-nav__toggle--open" type="button">
-        <span class="visually-hidden"> Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
 
       <div class="main-nav__wrapper">
@@ -48,16 +53,15 @@
 
     <div class="main-header">
       <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
-      <img src="#" width="322" height="280" alt="Добро пожаловать в наш магазин!">
+      <img src="img/hero-mobile@1x.jpg" width="322" height="282" alt="Добро пожаловать в наш магазин!">
       <div class="main-header__list">
-        <a href="#" class="main-header__item">
+        <a href="#" class="main-header__item main-header__item--interior">
           <h2 class="main-header__title main-header__title--small">Предметы интерьера</h2>
         </a>
-        <a href="#" class="main-header__item">
+        <a href="#" class="main-header__item main-header__item--toys">
           <h2 class="main-header__title main-header__title--small">Детские игрушки</h2>
         </a>
       </div>
-
     </div>
 
     <div class="container">
@@ -65,7 +69,7 @@
       <section class="product">
         <article class="product-entry">
           <h4 class="product-entry__title">Вязаные корзинки</h4>
-          <b class="product-entry__status">Товар недели</b>
+          <b class="product-entry__status">ТОВАР НЕДЕЛИ</b>
           <p class="product-entry__description">
             Экологически чистая пряжа,
             ручная работа. Доступны в шести
@@ -85,14 +89,14 @@
               <td class="product-entry__table-value">15см</td>
             </tr>
           </table>
-          <img src="#" width="260" height="315" alt="Фото наших замечательных корзинок">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото наших замечательных корзинок">
           <p class="product-entry___price">Цена: 999 руб.</p>
           <a class="btn btn-order" href="#">ЗАКАЗАТЬ</a>
         </article>
       </section>
 
       <section class="advantages">
-        <h3 class="advantages__title">Наши преимущества</h3>
+        <h3 class="advantages__title">Коротко о нас:</h3>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--flower">
             Экологически чистые материалы
@@ -165,7 +169,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <img src="img/map-background.png" width="322" height="457"
+          <img src="img/map-mobile@1x.jpg" width="322" height="457"
             alt="Главный офис и офлайн-магазин находятся по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
         </div>
         <a href="#" class="btn contacts__btn">НАПИШИТЕ НАМ</a>
@@ -199,7 +203,7 @@
 
     <p class="page-footer__copyright copyright">
       <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
-        РАЗРАБОТАНО
+        Разработано
         <span class="visually-hidden">HTML Academy</span>
         <svg class="copyright__icon" width="27" height="34">
           <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>

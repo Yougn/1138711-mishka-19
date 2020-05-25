@@ -1,0 +1,30 @@
+.main-header {
+  padding: 74px 42px;
+  background-color: #f1f1f1;
+}
+
+.main-header__title {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+  color: #010000;
+
+  &--small {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.26;
+    color: #ffffff;
+  }
+}
+
+.main-header__item {
+  display: block;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
