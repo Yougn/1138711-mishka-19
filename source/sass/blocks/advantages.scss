@@ -1,0 +1,17 @@
+.advantages__title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $black;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: $black;
+}

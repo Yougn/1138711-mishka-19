@@ -1,0 +1,16 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item {
+  border-bottom: 1px solid #ededed;
+
+  a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.41;
+    color: $black;
+  }
+}
