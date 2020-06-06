@@ -54,9 +54,7 @@
   cursor: pointer;
   border: none;
 
-  &:placeholder {
-    font-size: 17px;
-    line-height: 1.06;
+  &::placeholder {
     color: rgba(68, 68, 68, 0.3);
   }
 
@@ -78,9 +76,7 @@
   cursor: pointer;
   resize: none;
 
-  &:placeholder {
-    font-size: 17px;
-    line-height: 1.06;
+  &::placeholder {
     color: rgba(68, 68, 68, 0.3);
   }
 

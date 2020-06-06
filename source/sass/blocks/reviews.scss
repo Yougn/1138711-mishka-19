@@ -1,11 +1,25 @@
+.reviews {
+  position: relative;
+}
+
 .reviews__title {
   font-size: 25px;
   font-weight: bold;
   line-height: 1.2;
+  text-align: left;
   color: $black;
 }
 
+.reviews__text {
+  text-align: left;
+}
+
+.reviews__author {
+  text-align: left;
+}
+
 .reviews__author-name {
+  font-family: inherit;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
@@ -14,4 +28,43 @@
 
 .reviews__author-mail {
   line-height: 1.76;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviews__author {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .reviews__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
 }

@@ -21,14 +21,15 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
 .container {
-  max-width: 320px;
+  max-width: 1150px;
   margin: 0 auto;
-  width: 100%;
+  padding: 0 30px;
 }
 
 .visually-hidden {
@@ -53,4 +54,16 @@ img {
   color: $greyish-brown;
   background-color: $white;
   border: 2px solid $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 50px 0 225px;
+  }
 }

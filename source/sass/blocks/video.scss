@@ -1,4 +1,14 @@
+.video {
+  position: relative;
+  margin-bottom: 58px;
+  border: 1px solid $whitetwo;
+}
+
 .video__title {
+  position: absolute;
+  top: -17px;
+  left: 0;
+  right: 0;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
@@ -7,4 +17,26 @@
 .video__description {
   font-size: 13px;
   line-height: 1.85;
+}
+
+@media (min-width: $tablet-width) {
+  .video__title {
+    position: static;
+    bottom: 65px;
+    left: 30px;
+  }
+
+  .video__img {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    display: flex;
+  }
+
+  .video__img {
+    width: 682px;
+  }
 }

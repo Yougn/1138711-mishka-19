@@ -1,3 +1,7 @@
+.product-card {
+  border: 1px solid $whitetwo;
+}
+
 .product-card__title a {
   font-size: 17px;
   font-weight: bold;
@@ -15,4 +19,28 @@
   font-size: 15px;
   font-weight: bold;
   line-height: 1.6;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    display: flex;
+  }
+
+  .product-card img {
+    width: 334px;
+  }
+
+  .product-card__description {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card img {
+    width: 316px;
+  }
 }

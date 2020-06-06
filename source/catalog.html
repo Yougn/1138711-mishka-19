@@ -49,7 +49,7 @@
 
   <main class="page-main">
 
-    <div class="main-header">
+    <div class="main-header main-header--extra">
       <h1 class="main-header__title">Каталог товаров</h1>
     </div>
 
@@ -61,7 +61,7 @@
           <li class="catalog__item">
             <article class="product-card">
               <a href="#">
-                <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+                <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
               </a>
               <div class="product-card__description">
                 <h2 class="product-card__title"><a href="#">Зайчик-попрыгайчик</a></h2>
@@ -79,9 +79,9 @@
             </article>
           </li>
           <li class="catalog__item">
-            <article class="catalog-card">
+            <article class="product-card">
               <a href="#">
-                <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+                <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
               </a>
               <div class="product-card__description">
                 <h2 class="product-card__title"><a href="#">Корзинка для белья</a></h2>
@@ -98,10 +98,10 @@
               </div>
             </article>
           </li>
-          <li class="catalog__item">
-            <article class="catalog-card">
+          <li class="catalog__item catalog__item--toys">
+            <article class="product-card">
               <a href="#">
-                <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+                <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
               </a>
               <div class="product-card__description">
                 <h2 class="product-card__title"><a href="#">Большая корзинка для игрушек</a></h2>
@@ -122,16 +122,23 @@
       </section>
 
       <div class="video">
-        <h3 class="video__title">Процесс производства</h3>
-        <img class="video__img" src="img/video-mobile@1x.jpg" alt="Процесс производства!">
-        <p class="video__description">
-          По просьбам наших
-          любимых фалловеров мы
-          сняли для вас подробное
-          видео о том, как появляются
-          наши товары.
-        </p>
-        <a class="btn video__btn" href="#">СДЕЛАТЬ ЗАКАЗ</a>
+        <div class= "video__screen">
+          <img class="video__img" src="img/video-mobile@1x.jpg" alt="Процесс производства!">
+          <button class="video__play-button" type="button">
+            <span class="visually-hidden">Посмотреть видео</span>
+          </button>
+        </div>
+        <div class="video__wrapper">
+          <h3 class="video__title">Процесс производства</h3>
+          <p class="video__description">
+            По просьбам наших
+            любимых фалловеров мы
+            сняли для вас подробное
+            видео о том, как появляются
+            наши товары.
+          </p>
+          <a class="btn video__btn" href="#">СДЕЛАТЬ ЗАКАЗ</a>
+        </div>
       </div>
 
     </div>

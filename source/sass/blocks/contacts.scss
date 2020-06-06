@@ -2,9 +2,91 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
+  text-align: left;
   color: $black;
+}
+
+.contacts__box {
+  padding: 0 30px;
+}
+
+.contacts__mail {
+  text-align: left;
 }
 
 .contacts__link {
   color: $greyish-brown;
+}
+
+.contacts__address {
+  display: flex;
+}
+
+.contacts__office {
+  max-width: 165px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .contacts__box {
+    padding: 0 90px 0 50px;
+  }
+
+  .contacts__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .contacts__office {
+    max-width: 180px;
+  }
+
+  .contacts-map {
+
+    margin: 0 auto;
+  }
+
+  .contacts-map img {
+    z-index: 1;
+    width: 100%;
+    height: 457px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 656px;
+  }
+
+  .contacts__box {
+    padding: 0;
+  }
+
+  .contacts__text {
+    flex-direction: column;
+  }
+
+  .contacts-map {
+    position: relative;
+  }
+
+  .contacts-map img {
+    position: absolute;
+    top: -465px;
+    right: -150px;
+    width: 525px;
+    height: 457px;
+  }
 }
