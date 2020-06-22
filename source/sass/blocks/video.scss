@@ -1,14 +1,9 @@
 .video {
-  position: relative;
   margin-bottom: 58px;
   border: 1px solid $whitetwo;
 }
 
 .video__title {
-  position: absolute;
-  top: -17px;
-  left: 0;
-  right: 0;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
@@ -20,10 +15,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .video {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
   .video__title {
-    position: static;
-    bottom: 65px;
-    left: 30px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .video__column {
+    order: -1;
+  }
+
+  .video__description {
+    font-size: 15px;
+    line-height: 2;
   }
 
   .video__img {
@@ -33,10 +42,40 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    display: flex;
+    position: relative;
+    align-items: flex-end;
+  }
+
+  .video__title {
+    margin-top: 100px;
+    margin-right: 130px;
+    max-width: 150px;
+    text-align: left;
+  }
+
+  .video__column {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video__wrapper {
+    width: 280px;
+    padding-top: 20px;
+    padding-right: 55px;
+  }
+
+  .video__description {
+    text-align: left;
   }
 
   .video__img {
     width: 682px;
+  }
+
+  .video__btn {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
 }

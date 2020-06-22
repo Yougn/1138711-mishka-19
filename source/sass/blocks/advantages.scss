@@ -28,14 +28,28 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-    max-height: 350px;
   }
 
   .advantages__item {
+    width: 50%;
     font-size: 20px;
     line-height: 1.1;
+
+    &--flower {
+      order: -3;
+    }
+
+    &--like {
+      order: 1;
+    }
+
+    &--ball {
+      order: -2;
+    }
+
+    &--gift {
+      order: 3;
+    }
   }
 }
 
