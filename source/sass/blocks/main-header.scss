@@ -5,7 +5,7 @@
   background-color: $menu-color;
 
   &--extra {
-    padding: 60px 0;
+    padding: 72px 0 75px;
     background-image: none;
   }
 }
@@ -75,6 +75,11 @@
     max-width: 499px;
     font-size: 43px;
     line-height: 1.16;
+
+    &--extra {
+      padding: 30px 0 70px;
+      margin-bottom: 75px;
+    }
   }
 
   .main-header__list {
@@ -90,6 +95,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header__container {
+    width: 100%;
+    border-top: 1px solid $whitetwo;
+    background-color: $menu-color;
+  }
+
   .main-header {
     max-width: 1150px;
     margin: 0 auto;
@@ -100,6 +111,10 @@
     max-width: 604px;
     font-size: 53px;
     line-height: 1.08;
+
+    &--extra {
+      padding: 105px 0;
+    }
   }
 }
 

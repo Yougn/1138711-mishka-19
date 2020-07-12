@@ -54,6 +54,7 @@ img {
   color: $greyish-brown;
   background-color: $white;
   border: 2px solid $greyish-brown;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
