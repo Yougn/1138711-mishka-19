@@ -1,6 +1,6 @@
 .catalog__list {
   @include list-reset;
-  margin: 30px 0;
+  margin: 33px 0;
 }
 
 .catalog__item {
@@ -13,15 +13,11 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    margin: 70px 0 53px;
+    margin: 70px 0 -3px;
   }
 
   .catalog__item {
     padding-bottom: 53px;
-
-    &--toys {
-      padding-bottom: 0;
-    }
   }
 }
 
@@ -30,6 +26,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 128px 0 57px;
+    margin: 120px 0 0;
+  }
+
+  .catalog__item {
+    width: 30%;
   }
 }

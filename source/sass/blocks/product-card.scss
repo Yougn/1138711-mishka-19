@@ -1,8 +1,45 @@
 .product-card {
   border: 1px solid $whitetwo;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
-.product-card__title a {
+.product-card__wrapper {
+  padding: 20px 25px 10px;
+  text-align: left;
+
+  &--toys {
+    line-height: 1;
+  }
+}
+
+.product-card__title {
+  @include list-reset;
+
+  &--toys {
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__link {
+  padding-right: 10px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
@@ -10,9 +47,43 @@
 }
 
 .product-card__character {
+  @include list-reset;
+  padding-right: 77px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $whitetwo;
   font-size: 13px;
   line-height: 2.31;
   color: $greyish-brown;
+
+  &--basket {
+    padding-right: 25px;
+  }
+
+  &--toys {
+    padding-right: 0;
+  }
+}
+
+.products__cart-icon {
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    fill: $green;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+.product-card__order {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 10px;
 }
 
 .product-card__price {
@@ -26,12 +97,48 @@
     display: flex;
   }
 
+  .product-card__picture {
+    width: 69%;
+  }
+
   .product-card img {
     width: 334px;
   }
 
   .product-card__description {
     flex-grow: 1;
+  }
+
+  .product-card__wrapper {
+    padding-bottom: 6px;
+  }
+
+  .product-card__title--toys {
+    padding-top: 5px;
+    padding-right: 56px;
+  }
+
+  .product-card__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .product-card__character {
+    font-size: 15px;
+    padding-bottom: 173px;
+
+    &--toys {
+      padding-bottom: 150px;
+    }
+  }
+
+  .product-card__order {
+    padding: 0 31px 0;
+  }
+
+  .product-card__price {
+    font-size: 17px;
+    line-height: 1.41;
   }
 }
 
@@ -40,7 +147,23 @@
     flex-direction: column;
   }
 
+  .product-card__picture {
+    width: 100%;
+  }
+
   .product-card img {
     width: 316px;
+  }
+
+  .product-card__character {
+    padding-bottom: 35px;
+
+    &--toys {
+      padding-bottom: 15px;
+    }
+  }
+
+  .product-card__order {
+    padding: 0 27px 12px;
   }
 }

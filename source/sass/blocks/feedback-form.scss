@@ -204,16 +204,6 @@
 .feedback-form__btn {
   padding: 17px 45px;
   margin-bottom: 35px;
-
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: $greyish-brown;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 .feedback-form__input-radio + label::before {
@@ -309,6 +299,10 @@
 
     &--email {
       margin-bottom: 50px;
+    }
+
+    &--comment {
+      margin-bottom: 15px;
     }
   }
 
@@ -473,6 +467,10 @@
 @media (min-width: $desktop-width) {
   .feedback-form__title {
     padding: 45px 175px 0;
+  }
+
+  .feedback-form__group--radio {
+    margin-bottom: 10px;
   }
 
   .feedback-form__group--checkbox {
