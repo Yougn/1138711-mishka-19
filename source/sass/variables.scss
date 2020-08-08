@@ -1,7 +1,25 @@
 // color
 
 $white: #ffffff;
+$whitetwo: #ececec;
+$bg-color: #f1f1f1;
 $black: #000000;
 $greyish-brown: #444444;
 $green: #63d1bb;
 $light-green: #62d1ba;
+$menu-color: #f9f9f9;
+
+// viewport
+
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+// padding
+
+$container-padding-mobile: 30px;
+$container-padding-tablet: 50px;
+
+// retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
