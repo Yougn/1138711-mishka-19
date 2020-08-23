@@ -27,19 +27,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 26px 0 23px;
   border-bottom: 1px solid $whitetwo;
 }
 
-.page-footer__item {
-  &--insta {
-    padding-left: 56px;
-  }
-
-  &--facebook {
-    padding: 0 41px;
-  }
+.page-footer__item--facebook {
+  padding: 0 41px;
 }
 
 .page-footer__copyright {
@@ -62,7 +57,7 @@
 }
 
 .page-footer__text {
-  margin-right: 30px;
+  margin-right: 20px;
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
@@ -88,8 +83,12 @@
   .page-footer__list {
     @include list-reset;
     padding-top: 10px;
-    padding-left: 104px;
+    margin-left: auto;
     border-bottom: 0 solid;
+  }
+
+  .page-footer__item--insta {
+    margin-left: 35px;
   }
 
   .page-footer__copyright {
@@ -107,9 +106,5 @@
   .page-footer__wrapper {
     max-width: 1150px;
     margin: 0 auto;
-  }
-
-  .page-footer__list {
-    padding-left: 295px;
   }
 }
