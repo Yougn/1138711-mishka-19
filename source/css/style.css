@@ -1033,10 +1033,10 @@ img {
   .catalog__item {
     width: 30%; } }
 
-.contacts {
+.contacts__container {
   position: relative; }
 
-.contacts::after {
+.contacts__container::after {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1107,9 +1107,11 @@ img {
 .contacts__box {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  width: 100%; }
 
 .contacts__map-image {
+  width: 100%;
   height: 457px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: 0 0;
@@ -1136,7 +1138,7 @@ img {
 @media (min-width: 768px) {
   .contacts {
     margin-bottom: 55px; }
-  .contacts::after {
+  .contacts__container::after {
     top: 0;
     width: 771px;
     height: 15px;
@@ -1194,7 +1196,7 @@ img {
     width: 1150px;
     margin: 0 auto;
     padding: 0; }
-  .contacts::after {
+  .contacts__container::after {
     top: 7px;
     left: 50px;
     width: 1050px;
@@ -2089,14 +2091,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 26px 0 23px;
   border-bottom: 1px solid #ececec; }
-
-.page-footer__item--insta {
-  padding-left: 56px; }
 
 .page-footer__item--facebook {
   padding: 0 41px; }
@@ -2120,7 +2120,7 @@ img {
     opacity: 0.3; }
 
 .page-footer__text {
-  margin-right: 30px;
+  margin-right: 20px;
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
@@ -2146,8 +2146,11 @@ img {
     padding: 0;
     list-style: none;
     padding-top: 10px;
-    padding-left: 104px;
+    margin-left: auto;
     border-bottom: 0 solid; }
+    .page-footer__item--insta {
+      margin-left: 35px;
+    }
   .page-footer__copyright {
     margin: 0;
     padding: 0;
@@ -2161,8 +2164,7 @@ img {
   .page-footer__wrapper {
     max-width: 1150px;
     margin: 0 auto; }
-  .page-footer__list {
-    padding-left: 295px; } }
+  }
 
 .reviews {
   position: relative; }
